@@ -9,7 +9,7 @@ let calculate = document.getElementById("calculate")
 
     let weightInput = document.getElementById("weightInput").value;
 
-    imcValue = weightInput / (heightInput * heightInput);
+    imcValue = weightInput / Math.pow(heightInput, 2);
 
     parseFloat(imcValue);
 
